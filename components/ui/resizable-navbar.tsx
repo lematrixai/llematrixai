@@ -245,7 +245,7 @@ export const NavbarLogo = () => {
         alt="logo"
       />
       <div className="flex flex-col items-start leading-none">
-        <span className="font-bold text-lg font-poppins text-black dark:text-white tracking-tight leading-5 hover:opacity-80">
+        <span className="font-bold text-[16px] font-poppins text-black dark:text-white tracking-tight leading-5 hover:opacity-80">
           lematrixai
         </span>
         <span className="font-medium text-xs text-black/80 dark:text-white/80 hover:opacity-80">
