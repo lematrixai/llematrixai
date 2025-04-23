@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import Services from "@/components/services";
 import Testimonials from "@/components/testimonials";
-import Contact from "@/components/contact";
+import Banner from "@/components/banner";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <HeroSection />
         <Services />
         <Testimonials />
-        <Contact />
+        <Banner />
       </div>
     </main>
   );

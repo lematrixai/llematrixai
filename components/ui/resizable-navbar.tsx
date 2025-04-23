@@ -264,6 +264,7 @@ export const NavbarButton = ({
   children,
   className,
   variant = "primary",
+  isInsideLink = false,
   ...props
 }: {
   href?: string;
@@ -271,6 +272,7 @@ export const NavbarButton = ({
   children: React.ReactNode;
   className?: string;
   variant?: "primary" | "secondary" | "dark" | "gradient";
+  isInsideLink?: boolean;
 } & (
   | React.ComponentPropsWithoutRef<"a">
   | React.ComponentPropsWithoutRef<"button">
@@ -287,13 +289,15 @@ export const NavbarButton = ({
       "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
   };
 
+  const Component = isInsideLink ? "button" : Tag;
+
   return (
-    <Tag
-      href={href || undefined}
+    <Component
+      href={!isInsideLink ? href : undefined}
       className={cn(baseStyles, variantStyles[variant], className)}
       {...props}
     >
       {children}
-    </Tag>
+    </Component>
   );
 };

@@ -74,6 +74,9 @@ export function HeroSection() {
               offset={-100}
             >
               <Button
+              onClick={() => {
+                window.location.href = "/contact";
+              }}
                 size="lg"
                 className="w-full bg-black px-6 py-5 text-base font-semibold text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90 sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
               >

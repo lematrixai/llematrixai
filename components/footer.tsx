@@ -26,20 +26,19 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-white dark:bg-slate-900 ">
+    <footer className="relative bg-white dark:bg-slate-900 overflow-hidden ">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900" />
       <div className="absolute -right-20 top-0 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-3xl dark:bg-blue-500/20" />
       <div className="absolute -left-20 bottom-0 h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-3xl dark:bg-purple-500/20" />
 
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
           {/* Logo and Description */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-            <NavbarLogo />             
+              <NavbarLogo />             
             </div>
-           
           </div>
 
           {/* Services */}
@@ -52,6 +51,9 @@ export default function Footer() {
                 <li key={link.name}>
                   <Link
                     to={link.href}
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
                     className="font-inter text-sm text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
                   >
                     {link.name}
@@ -69,19 +71,22 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
                     className="font-inter text-sm text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Newsletter */}
-          <div className="z-30 w-full">
+          <div className="z-30 col-span-2">
             <h3 className="font-poppins text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-100">
               Newsletter
             </h3>
