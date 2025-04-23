@@ -1,10 +1,18 @@
-import { ModeToggle } from "@/components/darkMode";
-import { HeaderComponent } from "@/components/header";
+import { HeroSection } from "@/components/hero-section";
+import Services from "@/components/services";
+import Testimonials from "@/components/testimonials";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
- <div>
-<HeaderComponent/>
-</div>
+    <main className="relative min-h-screen w-full overflow-hidden">
+      <div className="relative">
+        <HeroSection />
+        <Services />
+        <Testimonials />
+        <Contact />
+      </div>
+    </main>
   );
 }
+
