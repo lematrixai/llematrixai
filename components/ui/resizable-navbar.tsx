@@ -130,7 +130,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
         <ScrollLink
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300 cursor-pointer"
+          className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300 "
           key={`link-${idx}`}
           to={item.link}
           smooth={true} duration={500}
@@ -245,7 +245,7 @@ export const NavbarLogo = () => {
         src={logo} 
         alt="logo"
       />
-      <div className="flex flex-col items-start leading-none">
+      <div className="flex flex-col items-start leading-none cursor-default">
         <span className="font-poppins text-[16px] font-bold tracking-tight text-black dark:text-white">
           lematrixai
         </span>
@@ -277,7 +277,7 @@ export const NavbarButton = ({
   | React.ComponentPropsWithoutRef<"button">
 )) => {
   const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative  hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
   const variantStyles = {
     primary:

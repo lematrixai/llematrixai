@@ -49,7 +49,7 @@ export function HeaderComponent() {
           smooth={true}
           duration={500}
           offset={-100}
-          className="relative text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-pointer"
+            className="relative text-sm font-medium text-neutral-600 hover:bg-slate-800 px-4 py-2 rounded-3xl hover:text-neutral-600 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-default"
         >
           {item.name}
         </ScrollLink>
@@ -59,7 +59,7 @@ export function HeaderComponent() {
         <Link
           key={`desktop-link-${idx}`}
           href={item.homeLink || item.link}
-          className="relative text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100"
+            className="relative text-sm font-medium px-4 py-2  text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-default"
         >
           {item.name}
         </Link>
@@ -69,7 +69,7 @@ export function HeaderComponent() {
         <Link
           key={`desktop-link-${idx}`}
           href={item.link}
-          className="relative text-sm font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100"
+          className="relative text-sm font-medium text-neutral-600 hover:bg-slate-800 px-4 py-2 rounded-3xl hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-default"
         >
           {item.name}
         </Link>
@@ -87,7 +87,7 @@ export function HeaderComponent() {
           duration={500}
           offset={-100}
           onClick={() => setIsMobileMenuOpen(false)}
-          className="relative text-lg font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-pointer"
+          className="relative text-lg font-medium text-neutral-600 hover:bg-slate-800 px-4 py-2 rounded-3xl hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-default"
         >
           <span className="block py-2">{item.name}</span>
         </ScrollLink>
@@ -98,7 +98,7 @@ export function HeaderComponent() {
           key={`mobile-link-${idx}`}
           href={item.homeLink || item.link}
           onClick={() => setIsMobileMenuOpen(false)}
-          className="relative text-lg font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100"
+          className="relative text-lg font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-default"
         >
           <span className="block py-2">{item.name}</span>
         </Link>
@@ -109,7 +109,7 @@ export function HeaderComponent() {
           key={`mobile-link-${idx}`}
           href={item.link}
           onClick={() => setIsMobileMenuOpen(false)}
-          className="relative text-lg font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100"
+            className="relative text-lg font-medium text-neutral-600 hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100 cursor-default  "
         >
           <span className="block py-2">{item.name}</span>
         </Link>
@@ -132,7 +132,7 @@ export function HeaderComponent() {
               <Link href="/contact">
                 <NavbarButton 
                   variant="primary" 
-                  className="font-poppins bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90"
+                  className="font-poppins bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90 cursor-default"
                 >
                   Get in touch
                 </NavbarButton>
@@ -163,7 +163,7 @@ export function HeaderComponent() {
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <NavbarButton
                   variant="primary"
-                  className="w-full bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90"
+                  className="w-full bg-black text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90 cursor-default"
                 >
                   Get in touch
                 </NavbarButton>

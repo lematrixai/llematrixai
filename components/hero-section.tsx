@@ -8,9 +8,9 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden max-md:pt-0 max-sm:pt-35 max-xl:pt-0 max-2xl:pt-20 pt-20">
       {/* Background elements */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white to-blue-50/50 dark:from-slate-950 dark:to-blue-950/20" />
+      {/* <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white to-blue-50/50 dark:from-slate-950 dark:to-blue-950/20" />
       <div className="absolute -right-20 top-0 h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-3xl dark:bg-blue-500/20 md:h-[600px] md:w-[600px]" />
-      <div className="absolute -left-20 bottom-0 h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-3xl dark:bg-purple-500/20 md:h-[600px] md:w-[600px]" />
+      <div className="absolute -left-20 bottom-0 h-[500px] w-[500px] rounded-full bg-purple-500/10 blur-3xl dark:bg-purple-500/20 md:h-[600px] md:w-[600px]" /> */}
 
       <div className="container relative mx-auto flex min-h-[calc(100vh-5rem)] flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -78,7 +78,7 @@ export function HeroSection() {
                 window.location.href = "/contact";
               }}
                 size="lg"
-                className="w-full bg-black px-6 py-5 text-base font-semibold text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90 sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
+                className="w-full bg-black px-6 py-5 text-base font-semibold text-white hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/90 sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
               >
                 Contact
               </Button>
