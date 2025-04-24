@@ -17,10 +17,10 @@ const footerLinks = {
     { name: "Projects", href: "projects" },
   ],
   connect: [
-    { name: "Twitter", href: "https://x.com/lematrixai", icon: <Twitter /> },
-    { name: "Instagram", href: "https://www.instagram.com/lematrixai", icon: <Instagram /> },
-    { name: "Github", href: "https://github.com/lematrixai", icon: <Github /> },
-    { name: "LinkedIn", href: "https://www.linkedin.com/company/lematrixai", icon: <Linkedin /> },
+    { name: "Twitter", href: "https://x.com/lematrixai", icon: <Twitter className="size-4" /> },
+    { name: "Instagram", href: "https://www.instagram.com/lematrixai", icon: <Instagram className="size-4" /> },
+    { name: "Github", href: "https://github.com/lematrixai", icon: <Github className="size-4" /> },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/lematrixai", icon: <Linkedin className="size-4" /> },
   ],
 };
 

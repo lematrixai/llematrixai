@@ -91,11 +91,11 @@ export default function Testimonials() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">🎯</span>
-              <span className="font-inter">99% Success Rate</span>
+              <span className="font-inter">100% Success Rate</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">🚀</span>
-              <span className="font-inter">10+ Projects</span>
+              <span className="font-inter">40+ Projects</span>
             </div>
           </motion.div>
         </div>
