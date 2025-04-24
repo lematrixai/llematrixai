@@ -118,6 +118,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  input[type="tel"].PhoneInputInput {
+    border: none !important;
+    outline: none !important;
+  }
 }
 
 

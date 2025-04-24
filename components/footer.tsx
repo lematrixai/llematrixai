@@ -3,6 +3,7 @@
 import { Button } from "./ui/button";
 import { NavbarLogo } from "./ui/resizable-navbar";
 import { Link } from "react-scroll"
+import { Twitter, Instagram, Github, Linkedin } from "lucide-react";
 
 const footerLinks = {
   services: [
@@ -16,10 +17,10 @@ const footerLinks = {
     { name: "Projects", href: "projects" },
   ],
   connect: [
-    { name: "Twitter", href: "https://x.com/lematrixai", icon: "🐦" },
-    { name: "Instagram", href: "https://www.instagram.com/lematrixai", icon: "📸" },
-    { name: "Github", href: "https://github.com/lematrixai", icon: "💻" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/company/lematrixai", icon: "🔗" },
+    { name: "Twitter", href: "https://x.com/lematrixai", icon: <Twitter /> },
+    { name: "Instagram", href: "https://www.instagram.com/lematrixai", icon: <Instagram /> },
+    { name: "Github", href: "https://github.com/lematrixai", icon: <Github /> },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/lematrixai", icon: <Linkedin /> },
   ],
 };
 
@@ -116,10 +117,9 @@ export default function Footer() {
               <a
                 key={link.name}
                 href={link.href}
-                className="font-inter text-sm text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
+                className="font-inter flex text-sm text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
               >
                 <span className="mr-1">{link.icon}</span>
-                {link.name}
               </a>
             ))}
           </div>
