@@ -1,9 +1,11 @@
 import React from 'react'
+import { Projects } from '@/components/projects'
+
 
 const page = () => {
   return (
-    <div className='h-screen'>
-      
+    <div >
+      <Projects />
     </div>
   )
 }
