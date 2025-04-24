@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowLeft, Youtube, Github } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Youtube, Github } from "lucide-react";
+
 import Image from "next/image";
 
 interface Project {
