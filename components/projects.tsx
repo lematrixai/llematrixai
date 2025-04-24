@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { Search, Filter, Youtube } from "lucide-react";
+import { Search, Github } from "lucide-react";
 import Link from "next/link";
 
 interface Project {
@@ -135,7 +135,7 @@ export function Projects() {
                     {project.title}
                   </h3>
                   <div className="flex items-center gap-2 ">
-                    <span className="text-sm text-slate-900 dark:text-slate-100 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded flex items-center gap-2"><Youtube />{project.source}</span>
+                    <span className="text-sm text-slate-900 dark:text-slate-100 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded flex items-center gap-2"><Github />{project.source}</span>
                   </div>
                 
                 </div>

@@ -10,7 +10,6 @@ export default function Home() {
       <div className="relative">
         <HeroSection />
         <Services />
-        <Projects />
         <Testimonials />
         <Banner />
       </div>

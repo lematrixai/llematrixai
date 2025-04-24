@@ -49,7 +49,7 @@ export default function Testimonials() {
             <div className="relative rounded-2xl bg-white p-8 shadow-lg dark:bg-slate-800">
               <div className="relative z-10">
                 <p className="font-inter text-lg leading-relaxed text-slate-600 dark:text-slate-400">
-                  "We approached lematrixai with an idea for our mobile app, and their work has been truly outstanding. We love working with their team and are always impressed by the quality of their work. They consistently deliver on time and exceed our expectations with their attention to detail and professionalism. Thank you for making every project such a smooth and enjoyable experience!"
+                  &ldquo;Working with lematrixai was a game-changer for our business. Their attention to detail and innovative approach helped us create a stunning digital presence that truly represents our brand.&rdquo;
                 </p>
 
                 {/* Client Info */}

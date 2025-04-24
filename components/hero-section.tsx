@@ -57,7 +57,7 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="font-inter relative z-10 mx-auto mt-6 max-w-2xl text-center text-base font-normal leading-relaxed text-slate-600 sm:text-lg dark:text-slate-400"
           >
-            At lematrixai, we blend creativity with technology to bring your digital dreams to life. From pixel-perfect designs to scalable solutions. Let's build something extraordinary together.
+            At lematrixai, we blend creativity with technology to bring your digital dreams to life. From pixel-perfect designs to scalable solutions. Let&apos;s build something extraordinary together.
           </motion.p>
 
            {/* CTA Buttons */}
