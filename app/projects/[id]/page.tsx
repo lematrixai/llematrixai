@@ -42,7 +42,7 @@ const Card = ({
   className?: string;
 }) => (
   <div
-    className={`bg-slate-50 dark:bg-slate-900 rounded-xl transition-all duration-300 hover:shadow-xl hover:bg-slate-100 dark:hover:bg-slate-800 ${className}`}
+    className={`  ${className}`}
   >
     {children}
   </div>
@@ -57,12 +57,12 @@ const Tag = ({ label }: { label: string }) => (
 // ========== Sections ==========
 
 const ProjectImage = () => (
-  <div className="relative aspect-video rounded-xl  overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl">
+  <div className="relative aspect-video rounded  overflow-hidden ">
     <Image
       src={project.image}
       alt={`${project.title} preview`}
       fill
-      className="object-cover transition-transform duration-500 hover:scale-105"
+      className="object-cover "
       priority
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
@@ -72,29 +72,29 @@ const ProjectImage = () => (
 const ProjectSummary = () => (
   <div className="flex flex-col gap-6">
  <Card
-  className="p-8 cursor-pointer bg-gradient-to-br from-slate-100 via-white to-slate-200 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-colors rounded-xl shadow-md hover:shadow-xl"
+  className="p-8 bg-gradient-to-br from-blue-900 via-purple-900 to-red-900 shadow-md hover:shadow-xl"
 >
-  <h1 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
+  <h1 className="text-xl font-bold text-white mb-4">
     {project.availability}
   </h1>
-  <p className="text-base text-slate-600 dark:text-slate-400 mb-4">
+  <p className="text-base text-slate-400 mb-4">
     This course is only available on YouTube for now. It&apos;ll be added here soon.
   </p>
-  <div className="bg-slate-100 dark:bg-slate-800 rounded-lg p-4 text-center text-slate-600 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
+  <div className="bg-slate-100 dark:bg-slate-800 cursor-pointer rounded-lg p-4 text-center text-slate-600 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
     Watch on YouTube
   </div>
 </Card>
 
-    <Card className="p-6 flex items-center justify-center">
+    <Card className=" flex items-center justify-center border bg-slate-100 dark:bg-slate-900">
       <a
         href={project.githubLink}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="View Source Code on GitHub"
-        className="flex flex-col items-center gap-2 group"
+        className="flex flex-col items-center gap-1 hover:bg-slate-200 w-full py-3 dark:hover:bg-slate-800"
       >
         <Github className="w-6 h-6 text-slate-900 dark:text-white group-hover:scale-110 transition-transform duration-300" />
-        <span className="text-base font-medium text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+        <span className="text-base font-medium text-slate-900 dark:text-white">
           Source Code
         </span>
       </a>
@@ -111,8 +111,8 @@ const ProjectTags = () => (
 );
 
 const AboutSection = () => (
-  <Card className="lg:col-span-2 p-8 shadow-md">
-    <div className="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+  <Card className="lg:col-span-2 p-8 border">
+    <div className="inline-flex items-center gap-2 px-3 py-1 text-sm font-medium rounded bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 ">
       <Youtube className="w-5 h-5" />
       YouTube
     </div>

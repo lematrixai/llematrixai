@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { Search, Github } from "lucide-react";
+import { Search, Youtube } from "lucide-react";
 import Link from "next/link";
 
 interface Project {
@@ -130,15 +130,15 @@ export function Projects() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <div className="p-6">
-                 
-                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
-                    {project.title}
-                  </h3>
-                  <div className="flex items-center gap-2 ">
-                    <span className="text-sm text-slate-900 dark:text-slate-100 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded flex items-center gap-2"><Github />{project.source}</span>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm text-slate-900 dark:text-slate-100 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded flex items-center gap-2"><Youtube />{project.source}</span>
                   </div>
                 
+                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white ">
+                    {project.title}
+                  </h3>
                 </div>
+                 
               </Link>
             </motion.div>
           ))}
