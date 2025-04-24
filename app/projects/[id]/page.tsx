@@ -78,7 +78,7 @@ const ProjectSummary = () => (
     {project.availability}
   </h1>
   <p className="text-base text-slate-600 dark:text-slate-400 mb-4">
-    This course is only available on YouTube for now. It'll be added here soon.
+    This course is only available on YouTube for now. It&apos;ll be added here soon.
   </p>
   <div className="bg-slate-100 dark:bg-slate-800 rounded-lg p-4 text-center text-slate-600 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
     Watch on YouTube
@@ -130,7 +130,7 @@ const AboutSection = () => (
 
 export default function ProjectPage() {
   return (
-    <main className="min-h-screen bg-white py-35 py-5 dark:bg-slate-950 transition-colors duration-300">
+    <main className="min-h-screen bg-white mt-35 py-5 dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto px-4 py-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

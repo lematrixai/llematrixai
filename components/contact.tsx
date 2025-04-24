@@ -26,7 +26,7 @@ export default function Contact() {
                 Get in touch.
               </h2>
               <p className="font-inter text-lg text-slate-600 dark:text-slate-400">
-                We'd love to hear from you. Fill in the form and we'll get back to you shortly.
+                We&apos;d love to hear from you. Fill in the form and we&apos;ll get back to you shortly.
               </p>
             </div>
 

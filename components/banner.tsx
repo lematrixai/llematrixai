@@ -26,7 +26,7 @@ export default function Banner() {
             {/* Content */}
             <div className="relative z-10">
               <span className="inline-block rounded-full bg-blue-100 px-4 py-1.5 text-sm font-medium text-blue-600 dark:bg-blue-900/30 dark:text-blue-400">
-                Let's Create Together
+                Let&apos;s Create Together
               </span>
               <h2 className="mt-4 font-poppins text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl dark:text-slate-100">
                 Ready to Elevate Your Digital Presence?
@@ -50,7 +50,7 @@ export default function Banner() {
                   size="lg"
                   className="bg-black px-8 py-6 text-lg font-semibold text-white hover:bg-black/90 dark:bg-white dark:text-black dark:hover:bg-white/90"
                 >
-                  Let's Contact
+                  Let&apos;s Contact
                 </Button>
               </motion.div>
 

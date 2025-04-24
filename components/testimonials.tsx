@@ -41,8 +41,9 @@ export default function Testimonials() {
             className="relative mx-auto max-w-3xl"
           >
             {/* Quote Icon */}
-            <div className="absolute -top-4 -left-4 text-6xl text-blue-500/20 dark:text-blue-400/20">
-              "
+            <div className="absolute -top-4 -left-6 text-6xl text-blue-500/20 dark:text-blue-400/20">
+            &ldquo;
+
             </div>
 
             {/* Testimonial Content */}
